@@ -12,7 +12,7 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar"
 import { HugeiconsIcon } from "@hugeicons/react"
-import { LayoutBottomIcon, AudioWave01Icon, CommandIcon, ComputerTerminalIcon, RoboticIcon, BookOpen02Icon, Settings05Icon, CropIcon, PieChartIcon, MapsIcon } from "@hugeicons/core-free-icons"
+import { LayoutBottomIcon, AudioWave01Icon, CommandIcon, ComputerTerminalIcon, CropIcon, PieChartIcon, MapsIcon } from "@hugeicons/core-free-icons"
 
 const data = {
   teams: [
