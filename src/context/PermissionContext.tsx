@@ -39,6 +39,7 @@ export type MainMenu = {
 export type PermissionsData = {
   role: "admin" | "user";
   groupName: string | null;
+  groupId: string | null;
   menus: MainMenu[];
 };
 
