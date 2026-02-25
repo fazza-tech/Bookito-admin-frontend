@@ -581,21 +581,23 @@ export function PlanManagement() {
       ctx.fillStyle = "#0f172a";
       fillRoundedRect(ctx, 120, pricingBoxY, 840, 230, 28);
 
-      ctx.fillStyle = "#a7f3d0";
-      ctx.font = "500 30px sans-serif";
-      ctx.fillText(
-        `${selectedPosterPlan.fromRooms} to ${selectedPosterPlan.toRooms} rooms`,
-        170,
-        pricingBoxY + 44,
-      );
+      if (selectedPosterPlan) {
+        ctx.fillStyle = "#a7f3d0";
+        ctx.font = "500 30px sans-serif";
+        ctx.fillText(
+          `${selectedPosterPlan.fromRooms} to ${selectedPosterPlan.toRooms} rooms`,
+          170,
+          pricingBoxY + 44,
+        );
 
-      ctx.fillStyle = "#ffffff";
-      ctx.font = "700 64px sans-serif";
-      ctx.fillText(
-        `${formatCurrency(selectedPosterPlan.ratePerRoom)} / room / month`,
-        170,
-        pricingBoxY + 102,
-      );
+        ctx.fillStyle = "#ffffff";
+        ctx.font = "700 64px sans-serif";
+        ctx.fillText(
+          `${formatCurrency(selectedPosterPlan.ratePerRoom)} / room / month`,
+          170,
+          pricingBoxY + 102,
+        );
+      }
 
       ctx.fillStyle = "#dcfce7";
       ctx.font = "500 28px sans-serif";
