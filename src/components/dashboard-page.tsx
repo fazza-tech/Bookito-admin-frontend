@@ -22,6 +22,7 @@ import { PermissionProvider } from "@/context/PermissionContext"
 import { GroupManagement } from "@/components/admin/GroupManagement"
 import { UserManagement } from "@/components/admin/UserManagement"
 import { PlanManagement } from "@/components/admin/PlanManagement";
+import { GeminiChat } from "@/components/GeminiChat";
 
 
 type DashboardUser = {
@@ -148,6 +149,7 @@ export function DashboardPage({
         <div className="flex flex-1 flex-col gap-4 p-4">
           {renderContent()}
         </div>
+        <GeminiChat />
       </SidebarInset>
     </SidebarProvider>
     </PermissionProvider>
